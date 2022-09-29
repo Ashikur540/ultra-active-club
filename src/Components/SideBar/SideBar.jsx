@@ -1,12 +1,34 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import loc from '../../Img/locIcon.png';
 import profile from '../../Img/profile.png';
 import './SideBar.css';
 const SideBar = (props) => {
-    const [breakTime, setBreak] = useState(0);
+    let [breakTime, setBreak] = useState(0);
+    
+
+const addtimeLS= (e)=>{
+    setBreak(e);
+    localStorage.setItem ("break-time",e )
+    
+}
 
 
+// get breaktime from local storage
+ breakTime=localStorage.getItem('break-time');
+
+if(!breakTime){
+    breakTime=0;
+}
+console.log(breakTime);
+
+
+    // console.log(saveTime);
+    // useEffect(() => {
+    //     localStorage.setItem('break-time', saveTime)
+    // }, [saveTime])
+
+    // array of buttons 
     const btimes = [30, 60, 120, 140];
 
 
@@ -22,10 +44,10 @@ const SideBar = (props) => {
         <div>
 
             <div className="profile">
-                <img src={profile} alt="" srcset="" />
+                <img src={profile} alt="" />
                 <div className="names">
                     <h4>Ashikur Rahman</h4>
-                    <small><img src={loc} alt="" srcset="" /> Ashulia,Savar,Dhaka</small>
+                    <small><img src={loc} alt="" /> Ashulia,Savar,Dhaka</small>
                 </div>
             </div>
             {/* ----- */}
@@ -66,10 +88,10 @@ const SideBar = (props) => {
                 } */}
 
                 {
-                    btimes.map(bt =>
+                    btimes.map((bt,index) =>
 
-                        <div className="circle">
-                            <button onClick={() => setBreak(bt)} className='b-time'>{bt}</button>
+                        <div className="circle" key = {index}>
+                            <button  onClick={() => addtimeLS(bt)} className='b-time' >{bt}</button>
                         </div>)
                 }
             </div>
