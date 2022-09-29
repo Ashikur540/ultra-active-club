@@ -1,0 +1,58 @@
+[
+  {
+    "id": "633523aa06f6770c4a35d783",
+    "picture": "https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=904&q=80",
+    "time": 78,
+    "age": "22-30",
+    "name": "Squat",
+    "about": "To achieve the best results, use a heavy weight, with fewer reps to increase strength and muscle mass, or use lighter weights (or simply your body weight) with explosive plyometric movements to develop your power and speed.\r\n"
+  },
+  {
+    "id": "633523aacfa39f28a5f39905",
+    "picture": "https://images.unsplash.com/photo-1626444232874-e72c020eeb0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+    "time": 204,
+    "age": "20-40",
+    "name": "Plank",
+    "about": "This is a fantastic exercise for your core that can be done in loads of different ways, depending on what you want to achieve. You can also perform a plank at both high and low intensity levels.\r\n"
+  },
+  {
+    "id": "633523aadf7b3c374334144f",
+    "picture": "https://images.unsplash.com/photo-1646629073384-a5d8ce11f912?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+    "time": 255,
+    "age": "20-35",
+    "name": "Box Jump",
+    "about": "This is a plyometric movement (i.e. a quick, movement that starts with a muscle engthening action, immediately followed by a muscle shortening one) that will help develop strength and power in your legs, specifically the hamstrings, glutes and quads.\r\n"
+  },
+  {
+    "id": "633523aa3ff04a1d083b0167",
+    "picture": "https://images.unsplash.com/photo-1534368959876-26bf04f2c947?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "time": 111,
+    "age": "26-35",
+    "name": "Bench Press",
+    "about": "An exercise that’s key for building upper body strength. To perform this exercise properly, you’ll need to use an Olympic bar or dumbbells for better muscle recruitment.\r\n"
+  },
+  {
+    "id": "633523aa34167c3d9d0c070a",
+    "picture": "https://images.unsplash.com/photo-1522898467493-49726bf28798?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "time": 253,
+    "age": "20-50",
+    "name": "Bosu Squats",
+    "about": "The unstable surface will help develop core strength, balance and strengthen the ankle stabilisers, which can help prevent common ankle injuries that footballers suffer from. Try them on just one leg at a time for a real challenge.\r\n"
+  },
+  {
+    "id": "633523aa2a3ed9440e000663",
+    "picture": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "time": 150,
+    "age": "20-55",
+    "name": "Card Cardio",
+    "about": "epresents a different type of exercise (sit ups, burpees, jumping jacks) and have a deck of cards on a desk. At the whistle, one representative of each group runs to draw a card and returns to the team where everyone has to do the type of exercise represented by the suit of the card and as many reps as the number given on the card. Set a certain amount of time and the team who completes the most cards at the end of the time is the winner.\r\n"
+  },
+  {
+    "id": "633523aa3ceb48f3e8a95658",
+    "picture": "http://placehold.it/32x32",
+    "time": 175,
+    "age": 20,
+    "name": "Roach Juarez",
+    "about": "Sint ea veniam ea consequat et qui adipisicing magna reprehenderit ut aute nisi. Fugiat incididunt est ullamco in. Ipsum duis excepteur consectetur occaecat sunt. Deserunt aute dolore ad enim voluptate eiusmod reprehenderit proident eu ad duis consectetur aliqua et. Enim est magna cupidatat ex excepteur veniam duis pariatur voluptate deserunt cupidatat est deserunt minim. Aute aliqua ut incididunt deserunt aliqua enim laboris est aute. Ullamco voluptate exercitation commodo esse sit tempor esse reprehenderit culpa irure culpa.\r\n"
+  }
+]
