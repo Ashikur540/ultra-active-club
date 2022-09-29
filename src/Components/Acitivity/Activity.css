@@ -1,0 +1,39 @@
+.activity-card {
+  background-color: white;
+  border: 1px solid #ccd5ae;
+  padding: 0.4rem;
+  margin: 0.8rem;
+  max-width: 20rem;
+  min-height: 450px;
+  position: relative;
+  border-radius: 5px;
+}
+.activity-card img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+small {
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+  color: #330;
+}
+
+.addAcBtn {
+  padding: 0.8rem 2rem;
+  margin: 0 auto;
+  background-color: #d4a373;
+  color: #fefae0;
+  border: 0;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-family: inherit;
+  box-shadow: 4px 4px 10px #ccd5ae;
+}

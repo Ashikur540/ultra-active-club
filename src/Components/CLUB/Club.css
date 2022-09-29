@@ -4,3 +4,9 @@
   gap: 12px;
   padding: 1rem;
 }
+
+.exercises-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
