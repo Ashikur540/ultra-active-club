@@ -11,10 +11,12 @@ const Activity = (props) => {
     return (
         <div className="activity-card">
             <img src={picture} alt="" />
+            <div className="card-desc">
             <h3>{name}</h3>
             <small>{about}</small>
             <p>Age: {age}</p>
             <p>Time: {time} Sec</p>
+            </div>
             <button  onClick={()=>handleAdd_TimetoList(activityData.time)} className="addAcBtn">Add to list</button>
         </div>
     );

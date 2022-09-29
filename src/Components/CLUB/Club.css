@@ -15,7 +15,7 @@
 
 .sidebar-container {
   background-color: #f6fadc;
-  height: 100%;
+  max-height: 600px;
   padding: 1rem;
 }
 

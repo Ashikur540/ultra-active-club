@@ -4,10 +4,10 @@ import loc from '../../Img/locIcon.png';
 import profile from '../../Img/profile.png';
 import './SideBar.css';
 const SideBar = (props) => {
-const [breakTime,setBreak]= useState(0);
+    const [breakTime, setBreak] = useState(0);
 
 
-const btimes=[30,60,120,140];
+    const btimes = [30, 60, 120, 140];
 
 
     // console.log("from:",props.time);
@@ -16,7 +16,7 @@ const btimes=[30,60,120,140];
     let totalTime = 0;
     for (const t of time) {
         totalTime += t;
-        console.log("total:",totalTime);
+        console.log("total:", totalTime);
     }
     return (
         <div>
@@ -28,7 +28,7 @@ const btimes=[30,60,120,140];
                     <small><img src={loc} alt="" srcset="" /> Ashulia,Savar,Dhaka</small>
                 </div>
             </div>
-{/* ----- */}
+            {/* ----- */}
             <div className="status">
                 <div className="box">
                     <h2>74<span className="kg">Kg</span></h2>
@@ -60,24 +60,29 @@ const btimes=[30,60,120,140];
                     {/* <button onClick={()=>setBreak()} className='b-time'>140s</button> */}
                 </div>
 
+
                 {/* {
                     breakTime
                 } */}
 
                 {
-                    btimes.map(bt=> 
-                    
+                    btimes.map(bt =>
+
                         <div className="circle">
-                       <button onClick={()=>setBreak(bt)} className='b-time'>{bt}</button>
-                    </div>)
+                            <button onClick={() => setBreak(bt)} className='b-time'>{bt}</button>
+                        </div>)
                 }
             </div>
 
-{/* ----- */}
-            <h3>Exercise Details:</h3>
-            <p>Exercise Time: {totalTime} Seconds</p>
-            <p>Break Time: {breakTime} Seconds</p>
 
+
+            {/* ----- */}
+            <h3>Exercise Details:</h3>
+            <p className="label">Exercise Time: {totalTime} Seconds</p>
+            <p className="label">Break Time: {breakTime} Seconds</p>
+
+            {/* last */}
+            <button className="completebtn">Activity Completed</button>
         </div>
     );
 };
