@@ -2,7 +2,7 @@
   background-color: white;
   border: 1px solid #ccd5ae;
   padding: 0.4rem;
-  margin: 0.8rem;
+  margin: 0.8rem auto;
   max-width: 20rem;
   min-height: 450px;
   position: relative;
