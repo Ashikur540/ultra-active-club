@@ -1,8 +1,15 @@
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import loc from '../../Img/locIcon.png';
 import profile from '../../Img/profile.png';
 import './SideBar.css';
 const SideBar = (props) => {
+const [breakTime,setBreak]= useState(0);
+
+
+const btimes=[30,60,120,140];
+
+
     // console.log("from:",props.time);
     const { time } = props;
     // console.log(time);
@@ -41,22 +48,35 @@ const SideBar = (props) => {
             <h3>Add a break</h3>
             <div className="break-box">
                 <div className="circle">
-                    <p className='b-time'>30s</p>
+                    {/* <button onClick={()=>setBreak(30)} className='b-time'>30s</button> */}
                 </div>
                 <div className="circle">
-                    <p className='b-time'>60s</p>
+                    {/* <button onClick={()=>setBreak(60)} className='b-time'>60s</button> */}
                 </div>
                 <div className="circle">
-                    <p className='b-time'>120s</p>
+                    {/* <button onClick={()=>setBreak()} className='b-time'>120s</button> */}
                 </div>
                 <div className="circle">
-                    <p className='b-time'>140s</p>
+                    {/* <button onClick={()=>setBreak()} className='b-time'>140s</button> */}
                 </div>
+
+                {/* {
+                    breakTime
+                } */}
+
+                {
+                    btimes.map(bt=> 
+                    
+                        <div className="circle">
+                       <button onClick={()=>setBreak(bt)} className='b-time'>{bt}</button>
+                    </div>)
+                }
             </div>
 
 {/* ----- */}
             <h3>Exercise Details:</h3>
             <p>Exercise Time: {totalTime} Seconds</p>
+            <p>Break Time: {breakTime} Seconds</p>
 
         </div>
     );
