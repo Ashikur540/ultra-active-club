@@ -7,17 +7,22 @@ const [activities, setActivities] = useState([])
 
 useEffect(()=>{
 fetch('clubData.json').then(res=>res.json()).then(data=> setActivities(data))
-},[])
+},[]);
+
+const handleAddtoList= (activity)=>{
+    console.log(activity);
+}
 
   return (
     <div>
-      <h2>Select your today's exercise! from {activities.length}</h2>
+      <h2>   &nbsp;  Select your today's exercise!</h2>
       <div className="club-container">
         <div className="exercises-container">
            {
-               activities.map(activitity=> <Activity
-               key={activitity.id}
-               activitityData={activitity}
+               activities.map(activity=> <Activity
+               key={activity.id}
+               activityData={activity}
+               handleAddtoList={handleAddtoList}
                ></Activity>)
            }
         </div>

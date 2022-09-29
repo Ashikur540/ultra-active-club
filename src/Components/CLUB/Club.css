@@ -10,3 +10,21 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
 }
+
+@media (max-width: 992px) {
+  .exercises-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .club-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 306px) and (max-width: 668px) {
+  .exercises-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .club-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
