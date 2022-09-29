@@ -21,6 +21,40 @@ const SideBar = (props) => {
                     <small><img src={loc} alt="" srcset="" /> Ashulia,Savar,Dhaka</small>
                 </div>
             </div>
+{/* ----- */}
+            <div className="status">
+                <div className="box">
+                    <h2>74<span className="kg">Kg</span></h2>
+                    <p>Weight</p>
+                </div>
+                <div className="box">
+                    <h2>5.11<span className="kg">inch</span></h2>
+                    <p>height</p>
+                </div>
+                <div className="box">
+                    <h2>22<span className="kg">yrs</span></h2>
+                    <p>Age</p>
+                </div>
+            </div>
+
+            {/* ----- */}
+            <h3>Add a break</h3>
+            <div className="break-box">
+                <div className="circle">
+                    <p className='b-time'>30s</p>
+                </div>
+                <div className="circle">
+                    <p className='b-time'>60s</p>
+                </div>
+                <div className="circle">
+                    <p className='b-time'>120s</p>
+                </div>
+                <div className="circle">
+                    <p className='b-time'>140s</p>
+                </div>
+            </div>
+
+{/* ----- */}
             <h3>Exercise Details:</h3>
             <p>Exercise Time: {totalTime} Seconds</p>
 

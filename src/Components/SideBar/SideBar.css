@@ -26,3 +26,39 @@ small {
   justify-content: center;
   align-items: center;
 }
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: #dae6b3;
+  margin: 1.2rem 0;
+  border-radius: 10px;
+}
+.kg {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+h3,
+h4,
+h2 {
+  font-weight: 600;
+}
+
+/* break */
+.break-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #e9edc9;
+  border-radius: 10px;
+}
+
+.b-time {
+  background-color: white;
+  border-radius: 150px;
+  padding: 0.8rem;
+  box-shadow: 2px 4px 8px rgb(187, 187, 187);
+}
