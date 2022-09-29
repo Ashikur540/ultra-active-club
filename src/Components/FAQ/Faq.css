@@ -13,7 +13,7 @@ p {
   text-align: left;
   padding: 1rem 2rem;
   border: 2px solid rgb(157, 179, 159);
-  width: 40rem;
+  max-width: 40rem;
   margin: 4% auto;
   border-radius: 10px;
 }
