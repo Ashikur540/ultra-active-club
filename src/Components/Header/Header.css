@@ -1,0 +1,15 @@
+.nav {
+  background-color: #fefae0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.nav .logo {
+  width: 80px;
+  padding: 0 0.8rem;
+}
+.name {
+  color: #d4a373;
+}
