@@ -1,5 +1,6 @@
 import './App.css';
 import Club from './Components/CLUB/Club';
+import Faq from './Components/FAQ/Faq';
 import Header from './Components/Header/Header';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
      <Header></Header>
      <Club></Club>
+     <Faq></Faq>
     </div>
   );
 }

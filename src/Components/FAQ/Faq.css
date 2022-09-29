@@ -1,0 +1,28 @@
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.faq-container {
+  text-align: center;
+  margin: 1rem 0;
+}
+.faq-card {
+  padding: 1rem 2rem;
+  text-align: left;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(157, 179, 159);
+  width: 40rem;
+  margin: 4% auto;
+  border-radius: 10px;
+}
+.faq-card h2 {
+  color: #c78a4e;
+  margin: 0.8rem 0;
+}
+.faq-card p {
+  color: #494847;
+  letter-spacing: 1px;
+  line-height: 120%;
+}
