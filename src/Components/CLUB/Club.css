@@ -11,6 +11,13 @@
   padding: 1rem;
 }
 
+.sidebar-container {
+  background-color: #fefae0;
+  height: 100%;
+  padding: 1rem;
+}
+
+/* responsive csss */
 @media (max-width: 992px) {
   .exercises-container {
     grid-template-columns: repeat(2, 1fr);

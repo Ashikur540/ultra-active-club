@@ -1,16 +1,27 @@
 
 import React, { useEffect, useState } from 'react';
 import Activity from '../Acitivity/Activity';
+import SideBar from '../SideBar/SideBar';
 import "./Club.css";
 const Club = () => {
+
 const [activities, setActivities] = useState([])
+const [time, setTime]= useState([])
 
 useEffect(()=>{
 fetch('clubData.json').then(res=>res.json()).then(data=> setActivities(data))
 },[]);
 
-const handleAddtoList= (activity)=>{
-    console.log(activity);
+
+
+// function to handle time addings
+const handleAdd_TimetoList= (activity)=>{
+    console.log('activity:',activity);
+    const newTime= [...time,activity];
+    setTime(newTime);
+    console.log(newTime);
+    
+
 }
 
   return (
@@ -22,11 +33,13 @@ const handleAddtoList= (activity)=>{
                activities.map(activity=> <Activity
                key={activity.id}
                activityData={activity}
-               handleAddtoList={handleAddtoList}
+               handleAdd_TimetoList={handleAdd_TimetoList}
                ></Activity>)
            }
         </div>
-        <div className="sidebar-container">This is sidebar</div>
+        <div className="sidebar-container">
+        <SideBar time={time}></SideBar>
+        </div>
       </div>
     </div>
   );
