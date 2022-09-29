@@ -22,7 +22,7 @@ const addtimeLS= (e)=>{
 // function to show toast
 
 const showToast =()=>{
-    toast('🦄 Wow so easy!');
+    toast('✌ Congratulations..  you have done your todays exercises');
 
     
 }
@@ -97,7 +97,7 @@ console.log(breakTime);
                 {/* {
                     breakTime
                 } */}
-
+{/* loaded the break time data dynamically  */}
                 {
                     btimes.map((bt,index) =>
 
@@ -112,6 +112,7 @@ console.log(breakTime);
             {/* ----- */}
             <h3>Exercise Details:</h3>
             <p className="label">Exercise Time: {totalTime} Seconds</p>
+            
             <p className="label">Break Time: {breakTime} Seconds</p>
 
             {/* last */}

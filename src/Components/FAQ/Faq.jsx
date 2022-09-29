@@ -32,7 +32,12 @@ const Faq = () => {
             </div>
             <div className="faq-card">
                 <h2>Use of useEffect in react?</h2>
-                <p>useEffect(callback, dependencies) invokes the callback after initial mounting, and on later renderings, if any value inside dependencies has changed.</p>
+                <p>useEffect(callback, dependencies) invokes the callback after initial mounting, and on later renderings, if any value inside dependencies has changed.
+                    Beside we also use it in:
+                    <li>Side-effect cleanup</li>
+                    <li>fetching api data</li>
+                    <li>SideEffect cleanp</li>
+                </p>
             </div>
         </div>
     );
