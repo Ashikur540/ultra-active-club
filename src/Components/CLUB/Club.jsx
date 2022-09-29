@@ -7,6 +7,7 @@ const Club = () => {
 
 const [activities, setActivities] = useState([])
 const [time, setTime]= useState([])
+const [STATE , setSTATE]= useState(false);
 
 useEffect(()=>{
 fetch('clubData.json').then(res=>res.json()).then(data=> setActivities(data))
@@ -22,7 +23,11 @@ const handleAdd_TimetoList= (activity)=>{
     console.log(newTime);
     
 
+    setSTATE(true);
+
 }
+
+console.log("state", STATE);
 
   return (
     <div>
@@ -38,7 +43,7 @@ const handleAdd_TimetoList= (activity)=>{
            }
         </div>
         <div className="sidebar-container">
-        <SideBar time={time}></SideBar>
+        <SideBar time={time} ></SideBar>
         </div>
       </div>
     </div>

@@ -1,70 +1,43 @@
 
 import React, { useState } from 'react';
+// toast
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import loc from '../../Img/locIcon.png';
 import profile from '../../Img/profile.png';
 import './SideBar.css';
 
-// toast
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 const SideBar = (props) => {
     let [breakTime, setBreak] = useState(0);
+    
+
+const addtimeLS= (e)=>{
+    setBreak(e);
+    localStorage.setItem ("break-time",e )
+    
+}
+
+// function to show toast
+
+const showToast =()=>{
+    toast('🦄 Wow so easy!');
+
+    
+}
 
 
-    const addtimeLS = (e) => {
-        setBreak(e);
-        localStorage.setItem("break-time", e)
+// get breaktime from local storage
+ breakTime=localStorage.getItem('break-time');
 
-    }
-
-    // function to show toast
-
-    const showToast = () => {
-        toast('🦄 Wow so easy!');
-        <ToastContainer
-            position="top-right"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-        />
-        {/* Same as */ }
-        <ToastContainer />
+if(!breakTime){
+    breakTime=0;
+}
+console.log(breakTime);
 
 
-        toast.success('🦄 Wow so easy!', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-        });
-
-
-    }
-
-
-    // get breaktime from local storage
-    breakTime = localStorage.getItem('break-time');
-
-    if (!breakTime) {
-        breakTime = 0;
-    }
-    console.log(breakTime);
-
-
-    // console.log(saveTime);
-    // useEffect(() => {
-    //     localStorage.setItem('break-time', saveTime)
-    // }, [saveTime])
+  
 
     // array of buttons 
     const btimes = [30, 60, 120, 140];
@@ -126,10 +99,10 @@ const SideBar = (props) => {
                 } */}
 
                 {
-                    btimes.map((bt, index) =>
+                    btimes.map((bt,index) =>
 
-                        <div className="circle" key={index}>
-                            <button onClick={() => addtimeLS(bt)} className='b-time' >{bt}</button>
+                        <div className="circle" key = {index}>
+                            <button  onClick={() => addtimeLS(bt)} className='b-time' >{bt}</button>
                         </div>)
                 }
             </div>
@@ -142,7 +115,8 @@ const SideBar = (props) => {
             <p className="label">Break Time: {breakTime} Seconds</p>
 
             {/* last */}
-            <button className="completebtn" onClick={showToast}>Activity Completed</button>
+            <button className="completebtn"  onClick={showToast}>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };
